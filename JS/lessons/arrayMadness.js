@@ -16,7 +16,7 @@ let arr = [
     [ [19,20,21,], [22,23,24], [25,26,27] ]     // 2
 ]
 
-for ( let i = 0 ; i < arr.length ; i++){
+for ( let i = 1 ; i < arr.length ; i++){
 
     // console.log("i", i, arr[i])
 
