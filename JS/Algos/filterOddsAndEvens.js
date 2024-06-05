@@ -19,8 +19,12 @@
 
 function filterOddsAndEvens(arr){
 
- let even = arr.filter(num => num % 2 == 0)
-return even
+ let yin = arr.filter(energy => energy % 2 == 0)
+// console.log(yin)
+
+let yang = arr.filter(energy => energy % 2 !== 0)
+//  console.log(yang)
+ return [yin, yang];
 }
 
 
