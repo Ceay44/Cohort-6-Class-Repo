@@ -3,8 +3,28 @@
 Your code goes below.
 
 */
+let x = 3;
+let y = 10;
+let z = 5;
+let mame = "Ceay"
+let greeting = "HEY";
 
+function multiply(num){
+  x = x * num;
+}
 
+function modYBy(param) {
+  y = y % param;
+}
+
+function opposite(param){
+  z = -param;
+}
+
+function makeFullName(param) {
+   name += " " + param;
+
+}
 
 
 
