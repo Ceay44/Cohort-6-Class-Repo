@@ -12,18 +12,15 @@
   //separate odd from even nums in arr
   //return the even nums from array
   //return the odd nums from array
-
+// use filter? or map? array
 
 
 
 
 function filterOddsAndEvens(arr){
 
-   let evens = arr.filter(number => number % 2 === 0);
-    let odds = arr.filter(number => number % 2 !== 0);
-    return [evens, odds];
-
-
+ let even = arr.filter(num => num % 2 == 0)
+return even
 }
 
 
