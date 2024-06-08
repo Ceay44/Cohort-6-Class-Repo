@@ -49,7 +49,7 @@ for (let i = 0; i < mixedSignNumbers.length; i++) {
   if (mixedSignNumbers[i] % 2 === 0) {
     console.log(mixedSignNumbers[i]);
   }
-}
+}}
 
 // Challenge 5
 // Remove two values from the beginning and one value from the end of the following array, simply by deleting them in the following line. Then console.log out each value individually.
@@ -82,12 +82,22 @@ fibonacciNumbers.forEach(value => {
 // Make a NEW array with 5 values of your choice, using the same syntax as the array creation from the previous 6 challenges; that is, every value should be placed within the square brackets.  Now console.log out each value individually.
 const myArr = ["t","o","d","a","y"];
 myArr.forEach(value => {
-  console.log(value);
+  console.log(value)
 });
 
 
 // Challenge 8
 // Make a new EMPTY array and fill it with five values of your choice using BOTH .push AND .unshift, and then console.log out each value individually.
+let newArr =[]
+
+ newArr.unshift(6, 8, 7)
+  newArr.push("Tell Me", "Hop")
+  console.log( newArr)
+  
+  newArr.forEach(item =>{
+    console.log(item)
+  })
+ 
 
 
 // Challenge 9
