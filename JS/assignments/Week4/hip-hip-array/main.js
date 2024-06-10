@@ -102,28 +102,58 @@ let newArr =[]
 
 // Challenge 9
 // Loop through the `students` array from Challenge 1, starting at index 3 and ending at index 10 (INCLUSIVE), logging out each value individually.
-
+for (let i = 3; i <= 10; i++) {
+  console.log(students[i]);
+}
 
 // Challenge 10
 // Loop through the `students` array from Challenge 1, making a COPY of the array, starting at index 3 and ending at index 10 (INCLUSIVE). This is very similar to string building; create a new array, loop through the old one, and put values from the original in the new one. Then log out each value of the copy indivudally.
 
+const copiedStudents = [];
+
+for (let i = i-3; i <= 10; i++) {
+  copiedStudents.push(students[i]);
+}
 
 // Challenge 11
 // Make a COPY of the `students` array *using .slice*, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy individually. THEN log out each value of the original array. Notice that the original array didn't get any values taken out of it, because `slice` does NOT modify the original array.
 
+// Creating a copy of the students array using slice
+const copiedStudents2 = students.slice(3, 11); // Slice from index 3 to index 10 (inclusive)
+
+// Logging out each value of the copied array individually
+copiedStudents2.forEach(student => console.log(student));
+
+// Logging out each value of the original array
+students.forEach(student => console.log(student));
 
 // Challenge 12
 // Pull the items at indices 4-6 (inclusive) from the following array using .splice (NOT .slice!), then console.log out each item from the ORIGINAL array. Note that .splice DOES change the original array.
 const dinosaurs = ['Velociraptor', 'T-Rex', 'Stegosaurus', 'Triceratops', 'Dimetrodon', 'Allosaur', 'Spinosaurus', 'Gigantosaur']
 
+// Removing items at indices 4-6 (inclusive) from the original array using splice
+const removedDinosaurs = dinosaurs.splice(4, 3); // Start at index 4, remove 3 items
+
+// Logging out each removed item from the original array
+removedDinosaurs.forEach(dinosaur => console.log(dinosaur));
+
+// Logging out each item from the original array after splicing
+dinosaurs.forEach(dinosaur => console.log(dinosaur));
 
 // Challenge 13
 // Use .join to change the dinosaur strings from the above array into one string with a '*' string as the "separator". Then console.log out that string.
+const joinedString = dinosaurs.join('*');
 
+// Logging out the joined string
+console.log(joinedString);
 
 // Challenge 14
 // Use .reverse to reverse the dinosaur array and then log out the original array. .reverse DOES change the original array.
+// Reversing the original array
+dinosaurs.reverse();
 
+// Logging out the reversed original array
+console.log(dinosaurs)
 
 // Challenge 15
 // Use .concat to combine the following two arrays into a NEW array you make (.concat RETURNS an array). Then console.log out each value of that new array individually. Now console.log both the primaries and secondaries arrays, noting that .concat does NOT mutate the original arrays.

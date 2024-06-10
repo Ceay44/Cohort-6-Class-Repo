@@ -83,42 +83,29 @@ console.log(isDay2("monday"))
 //     continue
 // }
 
-let count = 0
-function cc(card) {
+let count = 0;
 
+function cardCount(card) {
     switch (card) {
-
-        case 2:  //  if (card === 2)
+        case 2:
         case 3:
         case 4:
         case 5:
         case 6:
-            count++
+            count++;
             break;
-        // same as if we said
-
-        //  if( card === 2 || card === 3 || card === 4 || 
-        //       card ===  5 || card === 6){
-        //        count++
-        //           }
-
         case 10:
-        case "J":
-        case "Q":
-        case "K":
-        case "A":
-            count--
+        case 'J':
+        case 'Q':
+        case 'K':
+        case 'A':
+            count--;
             break;
+        // Do nothing for 7, 8, 9
     }
 
-    if (count >= 1) {
-        // console.log("card", card)
-        console.log(card, count + " Bet")
-    } else {
-        console.log(card, count + " Hold")
-    }
-
-
+    // Return the current count and the decision
+    return count + (count > 0 ? ' Bet' : ' Hold');
 }
 
 // console.log(cc(2))
