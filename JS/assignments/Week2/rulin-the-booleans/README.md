@@ -9,7 +9,7 @@ Just your typical pull, copy, and create a repo... and run the tests kind of exe
 
 * Write a function called `moreThan5` that takes in a number and returns whether or not it's greater than `5`.
 
-* Write a function called `isNewTopScore` that takes in a score (as a number) and a top score (as a number) and returns whether or not the score is greater than the top score. (This would be a good function in a game or 
+*  (This would be a good function iWrite a function called `isNewTopScore` that takes in a score (as a number) and a top score (as a number) and returns whether or not the score is greater than the top score.n a game or 
 gamified app to see if we need to update the high score to a new one.)
 
 * Write a function called `isInDanger` that takes in a grade (as a number) and returns whether or not it's between `60` and `71`, _inclusive_.

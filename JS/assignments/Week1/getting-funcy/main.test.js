@@ -1,9 +1,39 @@
 /**********************************
  * YOUR CODE GOES HERE THIS TIME! *
  **********************************/
-//github test
+
+// Variables
 let x = 3;
-let 
+let y = 10;
+let z = 4;
+let greeting = "hello";
+let firstName = "Shawn";
+let callStatus = "ringing";
+
+// Functions
+function double() {
+    x *= 2;
+}
+
+function triple() {
+    y *= 3;
+}
+
+function square() {
+    z **= 2;
+}
+
+function beNice() {
+  greeting = "hello" + firstName;
+}
+
+function changeName() {
+    firstName = "Danger";
+}
+
+function hangUp() {
+    callStatus = "call ended";
+}
 /*********************************************************************************************************************
 
  * CODE BELOW HERE IS FOR INTERNAL USE ONLY! IT ENSURES THAT THE TESTING *

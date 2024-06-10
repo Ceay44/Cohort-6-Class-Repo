@@ -1,7 +1,27 @@
 /******************
  * YOUR CODE BELOW *
  ******************/
+// Variables
+let myFirstName = "Robert";
+let myLastName = "Downy Jr";
+let myFavoriteCeleb = "Jennifer Lawrence";
+let myLuckyNum = 7;
+let myAge = 30;
+let myHeight = 70; // Height in inches
+let myFavoriteYear = 2015;
 
+// Sentence combining variables
+let mySentence = `${myFirstName} ${myLastName} admires ${myFavoriteCeleb}.`;
+
+// Mathematical operations
+let mySum = 5 + 2317 + 36;
+let myProduct = (232 * 43 / 2) + 4;
+let myHeightAndAge = myAge + myHeight;
+
+// Output
+console.log("mySum:", mySum);
+console.log("myProduct:", myProduct);
+console.log("myHeightAndAge:", myHeightAndAge);
 
 /*********************************************************************************************************************
 

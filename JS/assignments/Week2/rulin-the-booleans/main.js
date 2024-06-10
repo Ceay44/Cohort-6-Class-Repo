@@ -1,7 +1,72 @@
 /********************
  * YOUR CODE BELOW! *
  ********************/
+function moreThan5(num) {
+  return num > 5;
+}
 
+function isNewTopScore(score, topScore) {
+  return score > topScore;
+}
+
+function isInDanger(grade) {
+  return grade >= 60 && grade <= 71;
+}
+
+// Function to check if the grade is between 72 and 83, inclusive
+function isCoasting(grade) {
+  return grade >= 72 && grade <= 83;
+}
+
+// Function to check if the grade is between 84 and 92, inclusive
+function isSucceeding(grade) {
+  return grade >= 84 && grade <= 92;
+}
+
+// Function to check if the grade is below 60
+function isFailing(grade) {
+  return grade < 60;
+}
+
+// Function to check if the grade is above 92
+function isAcing(grade) {
+  return grade > 92;
+}
+
+// Function to check if the role is "student"
+function isStudent(role) {
+  return role === "student";
+}
+
+// Function to check if the role is "teacher"
+function isTeacher(role) {
+  return role === "teacher";
+}
+
+// Function to check if the role is "admin"
+function isAdmin(role) {
+  return role === "admin";
+}
+
+// Function to check if the school level is "elementary"
+function isElementary(schoolLevel) {
+  return schoolLevel === "elementary";
+}
+
+// Function to check if two names are different
+function areDifferentPeople(name1, name2) {
+  return name1 !== name2;
+}
+
+// Function to check if the role is "teacher" and the level is between 6 and 8, inclusive
+function isMiddleSchoolTeacher(role, level) {
+  return role === "teacher" && level >= 6 && level <= 8;
+}
+
+// Function to check if the role is not an elementary school administrator
+function notAnElementarySchoolAdministrator(schoolLevel, role) {
+  return !(isElementary(schoolLevel) && isAdmin(role));
+}
 
 
 /********************************************************************************************

@@ -16,3 +16,6 @@ function getInput(n) {
 }
 
 module.exports = getInput;
+
+// Assuming you have defined your isValid functions and colorCombinator and colorDeconstructor functions
+
