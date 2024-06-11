@@ -109,36 +109,55 @@ for (let i = 3; i <= 10; i++) {
 // Challenge 10
 // Loop through the `students` array from Challenge 1, making a COPY of the array, starting at index 3 and ending at index 10 (INCLUSIVE). This is very similar to string building; create a new array, loop through the old one, and put values from the original in the new one. Then log out each value of the copy indivudally.
 
-const copiedStudents = [];
+// Initialize an empty array to store the copied values
+const copy = [];
 
-for (let i = i-3; i <= 10; i++) {
-  copiedStudents.push(students[i]);
+// Loop through the original array starting at index 3 and ending at index 10 (inclusive)
+for (let i = 3; i <= 10; i++) {
+  // Push each value from the original array into the copy array
+  copy.push(students[i]);
+}
+
+// Log out each value of the copy array individually
+for (let i = 0; i < copy.length; i++) {
+  console.log(copy[i]);
 }
 
 // Challenge 11
 // Make a COPY of the `students` array *using .slice*, starting at index 3 and ending at index 10 (INCLUSIVE), then log out each value of the copy individually. THEN log out each value of the original array. Notice that the original array didn't get any values taken out of it, because `slice` does NOT modify the original array.
 
-// Creating a copy of the students array using slice
-const copiedStudents2 = students.slice(3, 11); // Slice from index 3 to index 10 (inclusive)
+// Make a copy of the students array using .slice()
+const copStudents = students.slice(3, 11); // Ending index is exclusive, so we use 11 to include the 10th element
 
-// Logging out each value of the copied array individually
-copiedStudents2.forEach(student => console.log(student));
+// Log out each value of the copy individually
+for (let i = 0; i < copStudents.length; i++) {
+  console.log(copStudents[i]);
+}
 
-// Logging out each value of the original array
-students.forEach(student => console.log(student));
-
+// Log out each value of the original array
+for (let i = 0; i < students.length; i++) {
+  console.log(students[i]);
+}
 // Challenge 12
 // Pull the items at indices 4-6 (inclusive) from the following array using .splice (NOT .slice!), then console.log out each item from the ORIGINAL array. Note that .splice DOES change the original array.
 const dinosaurs = ['Velociraptor', 'T-Rex', 'Stegosaurus', 'Triceratops', 'Dimetrodon', 'Allosaur', 'Spinosaurus', 'Gigantosaur']
 
-// Removing items at indices 4-6 (inclusive) from the original array using splice
-const removedDinosaurs = dinosaurs.splice(4, 3); // Start at index 4, remove 3 items
+// Array to store the removed items
+const removedItems = [];
 
-// Logging out each removed item from the original array
-removedDinosaurs.forEach(dinosaur => console.log(dinosaur));
+// Loop through the array from index 6 to index 4 (inclusive)
+for (let i = 6; i >= 4; i--) {
+  // Remove the item at index i using splice and add it to the removedItems array
+  removedItems.push(dinosaurs.splice(i, 1)[0]);
+}
 
-// Logging out each item from the original array after splicing
-dinosaurs.forEach(dinosaur => console.log(dinosaur));
+// Log out each removed item from the original array
+for (let i = 0; i < removedItems.length; i++) {
+  console.log(removedItems[i]);
+}
+
+// Log out the modified original array
+console.log(dinosaurs);
 
 // Challenge 13
 // Use .join to change the dinosaur strings from the above array into one string with a '*' string as the "separator". Then console.log out that string.

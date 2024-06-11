@@ -90,30 +90,30 @@ it('can turn a floating point number into an array of its digits, ignoring the d
 });
 
 function truncate(title) {
-  if (title.length >= 15) {
-      return title.slice(0, 8) + '...';
-  } else {
-      return title;
-  }
+    if (title.length >= 15) {
+        return title.slice(0, 8) + '...';
+    } else {
+        return title;
+    }
 }
 
 // Test cases
 it('shortens a title of at least 15 characters to one with 8 and 3 dots', function() {
-  const longTitle = 'This is a long title';
-  const result = truncate(longTitle);
-  expect(result).toEqual('This is ...');
+    const longTitle = 'This is a long title';
+    const result = truncate(longTitle);
+    expect(result).toEqual('This is ...');
 });
 
 it('shortens a string of exactly 15 characters', function() {
-  const exactTitle = 'Exactly 15 chars!';
-  const result = truncate(exactTitle);
-  expect(result).toEqual('Exactly ...');
+    const exactTitle = 'Exactly 15 chars!';
+    const result = truncate(exactTitle);
+    expect(result).toEqual('Exactly ...');
 });
 
 it('does not shorten a sub-15-character string', function() {
-  const shortTitle = 'Short title';
-  const result = truncate(shortTitle);
-  expect(result).toEqual('Short title');
+    const shortTitle = 'Short title';
+    const result = truncate(shortTitle);
+    expect(result).toEqual('Short title');
 });
 
 function isValidPassword(password) {
