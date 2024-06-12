@@ -6,7 +6,7 @@ function isEvenlyDivisible(num, divisor) {
 function halfSquare(num) {
   // square of the given number
   const square = num * num;
-  // return half  the square
+  // return half the square
   return square / 2;
 }
 
@@ -46,9 +46,9 @@ function exclaim(str) {
 
 // counting words
 function countWords(str) {
-  if (!str) return 0; // If the string is empty or false, return 0
+  if (!str) return 0; // If the str is empty or false, return 0
 
-  let wordCount = 0; // Start with 0 words
+  let wordCount = 0; // begin with no words
 
   // loop thru the whole str
   for (let i = 0; i < str.length; i++) {
