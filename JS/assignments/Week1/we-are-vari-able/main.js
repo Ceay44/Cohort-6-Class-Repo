@@ -4,14 +4,14 @@
 // Variables
 let myFirstName = "Robert";
 let myLastName = "Downy Jr";
-let myFavoriteCeleb = "Jennifer Lawrence";
+let myFavoriteCeleb = "Terrance Howard";
 let myLuckyNum = 7;
 let myAge = 30;
 let myHeight = 70; // Height in inches
 let myFavoriteYear = 2015;
 
 // Sentence combining variables
-let mySentence = `${myFirstName} ${myLastName} admires ${myFavoriteCeleb}.`;
+let mySentence = myFirstName + "  " + myLastName + " " + "admires" + " " + myFavoriteCeleb + ".";
 
 // Mathematical operations
 let mySum = 5 + 2317 + 36;
