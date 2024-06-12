@@ -1,0 +1,38 @@
+let games = [
+    [
+    name = "Naruto Ninja Storm",
+     id: 17  
+],
+
+[
+    name="Mortal Kombat One",
+id:18 ],
+[
+    name = "Bleach",
+    id = 21
+]
+
+]
+console.log(games)
+
+function exclaim(str) {
+  if (str.indexOf("!") !== str.length - 1) {
+    return str + "!";
+  } else {
+    return str;
+  }
+}exclaim("FishFry")
+ console.log(exclaim("Turkey Bacon!"))
+    console.log(exclaim("Bacon!!"))
+    console.log(exclaim("Beef Bacon!!!"))
+
+
+function exclaim(str){
+    if(str.length - 1 === "!" ){
+    return 
+#    }else if (str.length - 1 >= "!!" )
+}
+
+    console.log(exclaim("Turkey Bacon!"))
+    console.log(exclaim("Bacon!!"))
+    console.log(exclaim("Beef Bacon!!!"))
