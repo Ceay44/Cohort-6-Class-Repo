@@ -39,10 +39,12 @@ function isLongList(array) {
 }
 
 function firstItemIsNumber(MyArr) {
- 
+ // Check if the array has any items
+   // Check if the first item is a number
+   // If the array is empty, return false
   if (MyArr.length > 0) {
       return typeof MyArr[0] === 'number'; 
-  } else {
+  } else {  
       return false; 
   }
 }

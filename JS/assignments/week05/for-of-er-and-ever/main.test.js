@@ -2,6 +2,29 @@
  * YOUR CODE HERE *
  ******************/
 
+function addAll(numbers) {
+  return numbers.reduce((sum, num) => sum + num, 0);
+}
+
+
+function countSpaces(str) {
+  return str.split('').reduce((count, char) => char === ' ' ? count + 1 : count, 0);
+}
+
+
+function makeFriendly(paragraph) {
+  let result = "";
+  
+  for (let i = 0; i < paragraph.length; i++) {
+    if (paragraph[i] === '.') {
+      result += '!';
+    } else {
+      result += paragraph[i];
+    }
+  }
+  
+  return result;
+}
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
